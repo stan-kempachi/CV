@@ -193,6 +193,10 @@ p {
   margin-bottom: 20px;
 }
 
+ button  a{
+  color: white;
+}
+
 .main-wrapper .section-title .icon-holder {
   width: 30px;
   height: 30px;

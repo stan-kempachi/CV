@@ -121,7 +121,7 @@ path.two {
     width: 20%;
     position: relative;
     left: 40%;
-    bottom: -14%;
+    bottom: -17%;
     margin: 10% auto;
     padding: 5px 20px 13px 20px;
     background: -moz-linear-gradient(#42A8C0, #2d7788);
@@ -160,6 +160,7 @@ path.two {
     border: 1px solid ;
     overflow-x: hidden;
     overflow-y: scroll;
+    font-size: smaller;
 }
 
 #tchat {
@@ -203,17 +204,17 @@ path.two {
 }
 
 div#avatar {
-    background-image: url("../../avatar3.png");
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 101px;
-    padding: 0;
+    background-image: url("../../avatar2.png");
+    width: 70px;
+    height: 69px;
+    margin: 5px;
 
 }div#avatar2 {
     background-image: url("../../avatar.png");
     width: 40px;
     height: 40px;
     float: right;
+    margin: 10px;
 }
 
 .arrondie {
@@ -223,24 +224,25 @@ border-radius:70px;
 }
 
 .loader {
-  font-size: 5px;
-  margin: 50px auto;
-  text-indent: -9999em;
-  width: 11em;
-  height: 11em;
-  border-radius: 50%;
-  background: #42a8c0;
-  background: -moz-linear-gradient(left, #42a8c0 10%, rgba(66,168,192, 0) 42%);
-  background: -webkit-linear-gradient(left, #42a8c0 10%, rgba(66,168,192, 0) 42%);
-  background: -o-linear-gradient(left, #42a8c0 10%, rgba(66,168,192, 0) 42%);
-  background: -ms-linear-gradient(left, #42a8c0 10%, rgba(66,168,192, 0) 42%);
-  background: linear-gradient(to right, #42a8c0 10%, rgba(66,168,192, 0) 42%);
-  position: relative;
-  -webkit-animation: load3 1.4s infinite linear;
-  animation: load3 1.4s infinite linear;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
+    font-size: 5px;
+    margin-left: 50%;
+    margin-top: 90%;
+    /*margin: 50px auto;*/
+    text-indent: -9999em;
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    background: #42a8c0;
+    background: -moz-linear-gradient(left, #42a8c0 10%, rgba(66,168,192, 0) 42%);
+    background: -webkit-linear-gradient(left, #42a8c0 10%, rgba(66,168,192, 0) 42%);
+    background: -o-linear-gradient(left, #42a8c0 10%, rgba(66,168,192, 0) 42%);
+    background: -ms-linear-gradient(left, #42a8c0 10%, rgba(66,168,192, 0) 42%);
+    background: linear-gradient(to right, #42a8c0 10%, rgba(66,168,192, 0) 42%);
+    -webkit-animation: load3 1.4s infinite linear;
+    animation: load3 1.4s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
 }
 .loader:before {
   width: 50%;
@@ -253,17 +255,17 @@ border-radius:70px;
   content: '';
 }
 .loader:after {
-  background: white;
-  width: 75%;
-  height: 75%;
-  border-radius: 50%;
-  content: '';
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+    background: white;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 @-webkit-keyframes load3 {
   0% {
@@ -286,15 +288,59 @@ border-radius:70px;
   }
 }
 
-reponse {
-    text-align:right;
-    float:right;
-    margin-right: 40px;
+div reponse{
+    margin-top: 5px;
+    margin-bottom: 5px;
     margin-left: 40px;
+    margin-right: 20px;}
+
+reponse {
+    text-align:left;
+    float:right;
+    padding: 5px;
+    background-color: #f2d1ca;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px #B2B2B2;
+    width:  auto;
+}
+div msg {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    margin-right: 20px;
 }
 msg {
     text-align:left;
     float:left;
-    margin-right: 40px;
-    margin-left: 40px;
+    padding: 5px;
+    background-color: rgba(245, 255, 183, 0.6);
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px #B2B2B2;
+}
+
+.bubble{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px #B2B2B2;
+    height: 200px;
+    margin: 20px;
+    width:  275px;
+}
+
+.reponse::after {
+    background-color: #F2F2F2;
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+    content: "\00a0";
+    display: block;
+    height: 20px;
+    left: -10px;
+    position: relative;
+    top: 20px;
+    transform: rotate( 45deg );
+    width:  20px;
+}
+
+.choix{
+    padding: 5px;
+    background-color: #f2d1ca;
 }

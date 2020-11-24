@@ -1,5 +1,18 @@
 # pylint: skip-file
 
+WORD_ABOUT_PROFIL = [
+	'atout',
+	'atouts',
+	'soft skills',
+	'softskils',
+	'profil',
+	'interêt',
+	'intérêt'
+	'intérêts',
+	"centre d'intérêt",
+	"centres d'intérêts",
+	"intéresse",
+]
 WORD_ABOUT_EMPLACEMENT = [
 	'emplacement',
 	"l'emplacement",
@@ -54,5 +67,35 @@ SENTANCE_PLACE_GRANDPY = [
 	"Voici l'adresse : ",
 	"N'hésite pas à y faire un tour, il se situe ici : ",
 	"C'est un endroit très sympa! N'hésite pas à t'y rendre, c'est là : ",
+]
+
+SENTANCE_PROFIL = [
+	"Mes atouts ? Je dirais ",
+	"Pour ce qui est des mes atouts, Je vous répondrais ",
+	"Mes soft skills ? Je dirais ",
+	"Concernant mes soft skills ? Je pense ",
+]
+
+SOFTSKILLS = [
+	"L'écoute, l'analyse d'une demande client et la mise en place d'une solution adaptée \n",
+	"La recherche permanente de la satisfaction du client \n",
+	"Un bon sens du relationnel de l'humilité et de la patience.\n",
+	"L'envie d’apprendre pour monter facilement et plus rapidement en compétences.\n",
+	"l'empathie et le sens du service en m’impliquant dans la vie d'une équipe et d'un projet.\n"
+]
+
+TYPE_SENTENCE = [
+	"OK! Je vais donc vous parler de ",
+	"Très bon choix discutons de "
+]
+
+TYPE_QUESTION_NAME = [
+	"Pour commencer quel est votre prénom ?"
+]
+TYPE_QUESTION = [
+	"Que voulez vous savoir ? "
+]
+
+TYPE_SEARCH = [
 ]
 

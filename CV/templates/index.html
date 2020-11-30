@@ -277,7 +277,11 @@
                 </div>
                 <div id="form">
                     <form method="get">
+                        {% if type_search %}
+                        <input type="text" name="name" id="name_id" placeholder="&nbsp Entrez votre texte ici&#10;" size="24">
+                        {% else %}
                         <input type="text" name="question" id="msg_id" placeholder="&nbsp Entrez votre texte ici&#10;" size="24">
+                        {% endif %}
                         <input type="button" id="boutenvoyer" value="Envoyer">
                     </form>
                 </div>

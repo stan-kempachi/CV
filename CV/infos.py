@@ -6,3 +6,6 @@ profil = {'bio': "J’aime relever des défis. Je suis volontaire, et possède d
 
           }
 
+experiences = {}
+projets = {}
+skills = {}

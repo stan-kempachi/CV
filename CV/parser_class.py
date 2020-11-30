@@ -28,21 +28,22 @@ class Parser:
         list_words = sentance.split(' ')
         list_words_for_search = list_words
         for word in list_words:
+            if "de" in word:
+                list_words_for_search = list_words[list_words.index(word):]
+                break
             if "d'" in word:
                 list_words_for_search = list_words[list_words.index(word):]
                 break
             if word in WORD_ABOUT_PROFIL:
                 list_words_for_search = list_words[list_words.index(word) + 1:]
                 break
-            # if word in WORD_ABOUT_EMPLACEMENT and WORD_ABOUT_WHAT:
-            #     list_words_for_search = list_words[list_words.index(word) + 1:]
-            #     break
             if word in stop_words:
                 list_words_for_search = list_words[list_words.remove(word):]
             else:
                 list_words_for_search = list_words
         information = " ".join(list_words_for_search)
         information = information.replace("d'", '')
+        information = information.replace("de", '')
         return information
 
     def remove_punctuation(self, information: str):
@@ -60,9 +61,5 @@ class Parser:
                 information.remove(elt)
         information_to_search = " ".join(information)
         dict_request['information'] = information_to_search
-        dict_request['type_search'] = get_type_search(information_to_search)
         print(dict_request)
         return dict_request
-
-
-

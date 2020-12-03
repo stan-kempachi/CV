@@ -31,26 +31,30 @@ def get_user_request():
     if request.method == "GET":
         request_user = request.args.get('question')
         type_search = get_type_search(request_user)
-        if type_search == 'erreur':
-            name = get_name(request_user)
-            if name:
-                dict_information = {'type_search': type_search, 'name': name, 'nice': random.choice(TYPE_QUESTION)}
-                return json.dumps(dict_information)
-            else:
-                parser = Parser(request_user)
-                information_extracted = parser.extract_information_request(request_user)
-                information_extracted = parser.remove_punctuation(information_extracted)
-                information_extracted = parser.remove_word_please(information_extracted)
-                information = information_extracted['information']
-                print(information)
-
-                dict_information = {'type_search': type_search, 'information': information,
-                                    'sentance_type': random.choice(TYPE_SENTENCE)}
-                return json.dumps(dict_information)
-        else:
+        print(type_search)
+        if type_search == 'son profil' or type_search == 'son expérience' or type_search == 'sa formation' or \
+                type_search == 'ses skills':
+            print('profil')
             dict_information = {'type_search': type_search, 'sentance_type': random.choice(TYPE_SENTENCE),
                                 'ask_for_name': random.choice(TYPE_QUESTION_NAME)}
             return json.dumps(dict_information)
+        if type_search == 'name':
+            print('name')
+            name = get_name(request_user)
+            dict_information = {'name': name, 'nice': random.choice(TYPE_QUESTION)}
+            return json.dumps(dict_information)
+        if type_search == 'question':
+            print('question')
+            parser = Parser(request_user)
+            information_extracted = parser.extract_information_request(request_user)
+            information_extracted = parser.remove_punctuation(information_extracted)
+            information_extracted = parser.remove_word_please(information_extracted)
+            information = information_extracted['information']
+            dict_information = {'information': information,
+                                'sentance_type': random.choice(TYPE_SENTENCE),
+                                'resp': profil['bio']}
+            return json.dumps(dict_information)
+
 
 
 if __name__ == '__main__':

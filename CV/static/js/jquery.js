@@ -27,28 +27,22 @@ $(function() {
                 var type = response_json['type_search'];
                 var prenom = response_json['name'];
                 var info = response_json['information'];
-                if (type == 'son profil' || 'son expérience' || 'sa formation' || 'ses skills') {
+                if (type == 'son profil' || type == 'son expérience' || type == 'sa formation' || type == 'ses skills') {
                     $('#tchat').append('<div id="avatar2"></div><br><br>' + '<reponse>' +
-                        (response_json['sentance_type']) + type + '</reponse><reponse>' +
+                        (response_json['sentance_type']) + type +'</reponse><reponse>' +
                         (response_json['ask_for_name']) + '</reponse>');
                     $("#fontchat").animate({scrollTop: $("#tchat").height()}, 1000);
                 }
-                else if (type == 'name') {
+                else if (type == 'name' ) {
                     $('#tchat').append('<div id="avatar2"></div><br><br>' + '<reponse>' + 'Enchanté ' +
                         prenom + "&nbsp;!&nbsp;" + (response_json['nice']) + '</reponse>');
                     $("#fontchat").animate({scrollTop: $("#tchat").height()}, 1000);
                 }
-                else if (type == 'question') {
+                else {
                     $('#tchat').append('<div id="avatar2"></div><br><br>' + '<reponse>' +
-                        (response_json['sentance_type']) + info + '</reponse>');
-                    $('#tchat').append('<div id="avatar2"></div><br><br>' + '<reponse>' +
-                        (response_json['resp']) + '</reponse>');
+                        (response_json['sentance_type']) + info + response_json['resp'] + '</reponse>');
                     $("#fontchat").animate({scrollTop: $("#tchat").height()}, 1000);
                 }
-                else {
-                    $('#tchat').css("display", "none");
-                    display_error();
-                    }
             },
             error: function (error) {
                 $('#contain_loader').css("display", "none");

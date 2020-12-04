@@ -40,7 +40,9 @@ $(function() {
                 }
                 else {
                     $('#tchat').append('<div id="avatar2"></div><br><br>' + '<reponse>' +
-                        (response_json['sentance_type']) + info + response_json['resp'] + '</reponse>');
+                        (response_json['sentance_type']) + info  + '</reponse>');
+                    $('#tchat').append('<div id="avatar2"></div><br><br>' + '<reponse>' +
+                        (response_json['resp']) + '</reponse>');
                     $("#fontchat").animate({scrollTop: $("#tchat").height()}, 1000);
                 }
             },

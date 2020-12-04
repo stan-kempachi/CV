@@ -20,13 +20,13 @@ def get_type_search(nbr):
         print('4')
         type_search = 'ses skills'
         return type_search
-    if len(nbr.split()) > 1:
-        print('quest')
-        type_search = 'question'
-        return type_search
     if nbr.istitle():
         type_search = 'name'
         print('name')
+        return type_search
+    if len(nbr.split()) > 1:
+        print('quest')
+        type_search = 'question'
         return type_search
 
 

@@ -1,4 +1,4 @@
-ppdirs==1.4.4
+appdirs==1.4.4
 asgiref==3.2.3
 atomicwrites==1.3.0
 attrs==19.3.0
@@ -47,6 +47,7 @@ pluggy==0.13.0
 psycopg2==2.8.6
 py==1.8.0
 pycparser==2.20
+pyenchant==3.1.1
 pyparsing==2.4.2
 python-dateutil==2.8.1
 python-memcached==1.59

@@ -231,12 +231,12 @@
         </div><!--//main-body-->
     </div>
  
-    <footer class="footer">
-        <div class="text-center">
-            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-            <small class="copyright">Designed by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a></small>
-        </div><!--//container-->
-    </footer><!--//footer-->
+<!--    <footer class="footer">-->
+<!--        <div class="text-center">-->
+<!--            &lt;!&ndash;/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */&ndash;&gt;-->
+<!--            <small class="copyright">Designed by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a></small>-->
+<!--        </div>&lt;!&ndash;//container&ndash;&gt;-->
+<!--    </footer>&lt;!&ndash;//footer&ndash;&gt;-->
 
         <div class="wrapper" id="fixedbutton">
           <a class="cta" href="#openBot">
@@ -254,40 +254,27 @@
         </div>
         <div id="openBot" class="modalDialog">
           <div>
-            <a href="#close" title="Close" class="close" >X</a>
+              <a href="#close" title="Close" class="close" >X</a>
               <div id="avatar" class="arrondie"></div>
               <div id="fontchat">
                   <div id="avatar2"></div>
-                    <reponse>Bonjour je m'appel Stanbot . Je suis un smart bot à votre
-                      service pour vous en apprendre plus sur Stan ! Alors on commence par quoi  ?</reponse>
-                      <reponse>Entrez un nombre de 1 à 4  parmis les options suivantes:</reponse>
-                      <reponse>1. Sous son meilleur profil</reponse>
-                      <reponse>2. Une riche expérience</reponse>
-                      <reponse>3. Quelques projets</reponse>
-                      <reponse>4. Les skills en détails</reponse><br><br>
+                  <reponse>Bonjour je m'appel Stanbot . Je suis un smart bot à votre
+                        service pour vous en apprendre plus sur Stan ! </reponse><br>
+                  <reponse>   Alors pour commencer quel est votre prénom ?</reponse><br><br>
                   <div id="tchat">
                       <div id="contain_loader">
-                <div class="loader">Loading...</div>
-              </div>
-              <div id="alert">
-                  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                  <p id="text_error">Je n'ai pas compris cette question.</p>
-              </div>
+                          <div class="loader">Loading...</div>
+                      </div>
                   </div>
-                </div>
-                <div id="form">
-                    <form method="get">
-                        {% if type_search %}
-                        <input type="text" name="name" id="name_id" placeholder="&nbsp Entrez votre texte ici&#10;" size="24">
-                        {% else %}
-                        <input type="text" name="question" id="msg_id" placeholder="&nbsp Entrez votre texte ici&#10;" size="24">
-                        {% endif %}
-                        <input type="button" id="boutenvoyer" value="Envoyer">
+              </div>
+              <div id="form">
+                  <form method="get">
+                      <input type="text" onfocus="this.value=''" name="question" id="msg_id" value="&nbsp Entrez votre texte ici&#10;" size="24">
+                      <input type="button" id="boutenvoyer" value="Envoyer">
                     </form>
                 </div>
           </div>
         </div>
-        <a href="https://icons8.com/icon/0lg0kb05hrOz/utilisateur">Utilisateur icon by Icons8</a>
     <script
       src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="

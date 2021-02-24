@@ -5,8 +5,8 @@
 import json
 import string
 
-from CV.vocabulary import WORD_ABOUT_EMPLACEMENT, WORD_ABOUT_WHAT, WORD_PLEASE, WORD_ABOUT_PROFIL
-from CV.utils import get_type_search
+from CV.vocabulary import WORD_PLEASE
+import enchant
 
 
 class Parser:
@@ -27,29 +27,34 @@ class Parser:
             stop_words = json.load(json_data)
         list_words = sentance.split(' ')
         list_words_for_search = list_words
-        for word in list_words:
-            if "de" in word:
-                list_words_for_search = list_words[list_words.index(word):]
-                break
+        for word in list(list_words):
+            if word.lower() in stop_words:
+                list_words_for_search = list_words[list_words.remove(word):]
             if "d'" in word:
                 list_words_for_search = list_words[list_words.index(word):]
                 break
-            if word in WORD_ABOUT_PROFIL:
-                list_words_for_search = list_words[list_words.index(word) + 1:]
-                break
-            if word in stop_words:
-                list_words_for_search = list_words[list_words.remove(word):]
-            else:
-                list_words_for_search = list_words
         information = " ".join(list_words_for_search)
         information = information.replace("d'", '')
-        information = information.replace("de", '')
+        information = information.replace(" de ", '')
         return information
+
+    def remove_unexpected_word(self, information: str):
+        d = enchant.Dict("en_FR")
+        information = information.split()
+        info = []
+        for word in information:
+            d.check(word)
+            if d is True:
+                info.append(word)
+            else:
+                pass
+        return str(info)
 
     def remove_punctuation(self, information: str):
         """punctuation to space"""
         translator = str.maketrans(string.punctuation, ' ' * len(string.punctuation))
         information = information.translate(translator)
+        information = information.rstrip().lstrip()
         return information
 
     def remove_word_please(self, information: str):
@@ -61,5 +66,4 @@ class Parser:
                 information.remove(elt)
         information_to_search = " ".join(information)
         dict_request['information'] = information_to_search
-        print(dict_request)
         return dict_request

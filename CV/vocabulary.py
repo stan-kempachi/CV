@@ -1,10 +1,6 @@
 # pylint: skip-file
 
 WORD_ABOUT_PROFIL = [
-	'atout',
-	'atouts',
-	'soft skills',
-	'softskils',
 	'profil',
 	'interêt',
 	'intérêt'
@@ -13,24 +9,63 @@ WORD_ABOUT_PROFIL = [
 	"centres d'intérêts",
 	"intéresse",
 ]
-WORD_ABOUT_EMPLACEMENT = [
-	'emplacement',
-	"l'emplacement",
-	'adresse',
-	"l'adresse",
-	'lieu',
-	'se situe',
-	'se trouve',
-	'comment aller',
-	'comment se rendre',
-	'endroit',
-	"l'endroit",
-	'comment aller',
-	"rue",
-	"localiser",
-	"localisation",
-	"où sont",
-	"où est",
+WORD_ABOUT_EXP = [
+	'profession',
+	'professions',
+	'expérience',
+	'expériences',
+	'professionnel'
+	'professionnelle'
+	'professionnels'
+	'professionnelles'
+	'métier',
+	'métier exercé',
+	'parcours professionnel'
+]
+WORD_ABOUT_FORMATION = [
+	'formation',
+	'diplome',
+	'diplomes',
+	'certification',
+	'certificat',
+	'openclassrooms,'
+	'RNCP',
+	'parcours scolaire',
+	'école',
+	'collège',
+	'lycée',
+	'études',
+	'étudier'
+]
+WORD_ABOUT_SKILLS = [
+	'atout',
+	'atouts',
+	'skills',
+	'softskills',
+	'compétences techniques',
+	'compétence technique',
+	'compétence',
+	'compétences',
+	'technique',
+	'frameworks',
+	'python',
+	'django',
+	'posql',
+	'mysql',
+	'javascript',
+	'jquery',
+	'bootstrap',
+	'html5',
+	'css',
+	'photoshop'
+]
+
+WORD_ABOUT_PROJECT = [
+	'projets',
+	'projet',
+	'pbeurre',
+	'comparateur',
+	'grandpybot'
 ]
 
 WORD_ABOUT_WHAT = [
@@ -53,21 +88,6 @@ WORD_PLEASE = [
 	'please'
 ]
 
-SENTANCE_DESCRIPTION_GRANDPY = [
-	"Voici son histoire : ",
-	"Laisse moi te raconter son histoire : ",
-	"Je vais donc t'en parler : ",
-	"Son histoire est très intéressante ! je te la raconte : ",
-	"Son histoire est très intéressante, la voici : ",
-]
-
-SENTANCE_PLACE_GRANDPY = [
-	"Ah je connais bien ce lieu, il se situe ici : ",
-	"Tu peut retrouver ce lieu là : ",
-	"Voici l'adresse : ",
-	"N'hésite pas à y faire un tour, il se situe ici : ",
-	"C'est un endroit très sympa! N'hésite pas à t'y rendre, c'est là : ",
-]
 
 SENTANCE_PROFIL = [
 	"Mes atouts ? Je dirais ",
@@ -84,18 +104,9 @@ SOFTSKILLS = [
 	"l'empathie et le sens du service en m’impliquant dans la vie d'une équipe et d'un projet.\n"
 ]
 
-TYPE_SENTENCE = [
-	"OK! Je vais donc vous parler de ",
-	"Très bon choix discutons de "
-]
-
 TYPE_QUESTION_NAME = [
 	"Pour commencer quel est votre prénom ?"
 ]
 TYPE_QUESTION = [
-	"Que voulez vous savoir ? "
+	"Que voulez vous savoir ?<br> <i>Dites par exemple : Quelles sont ses compétences techniques ?<i>"
 ]
-
-TYPE_SEARCH = [
-]
-

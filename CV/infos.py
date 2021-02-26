@@ -6,6 +6,11 @@ profil = {
           }
 
 experiences = {
+    'projets persos': [
+        "Lors de ses deux ans de formation Stan à développé un déployé plusieurs projets. "
+        "Il a notamment travaillé pour le compte d'un client, expert de l'électroménager en développant une "
+        "application sur mesure."
+    ],
     'relation': [
         "Fort de 10 ans d'expérience dans la relation clientèle, Stan est devenu un expert de la la "
         "satisfaction client.<br>"
@@ -30,18 +35,32 @@ projets = {
         "affiche les prix des références produits cherchées. Possèdant aussi une tache de mise à jour regulière "
         "de la base de donnée."
     ],
+    'pbeurre': [
+        'Lors de sa formation Stan à développé une plateforme Django permettant à '
+        'quiconque de trouver le substitut plus sain d’un aliment. Déployée sur un serveur Gunicorn . '
+        'Visitez le site ici <button style="background-color:#42A8C0"><span class="project-title">'
+        '<a href="https://pbeurre.herokuapp.com/pbeurre/" target="_blank"><b>Pbeurre</b></a></span></button>'
+    ],
+    'grandpybot': [
+        "Lors de sa formation Stan à développé une plateforme Flask possédant un chat Ajax permettant de discuter "
+        "avec un bot qui répond comme un grand père en utilisant les API Wikipédia et Google Maps"
+        'Visitez le site ici <button style="background-color:#42A8C0"><span class="project-title">'
+        '<a href="https://grandpyrobot.herokuapp.com/" target="_blank"><b>Grandpybot</b></a></span></button>'
+    ]
            }
 
 skills = {
-    'languages': [
-        "Stan maitrise les languages:<br>"
-        "<li> Python,"
-        "<li> Javascript,"
-        "<li> HTML5 & CSS.<br>"
-        "Pour ses projets il utilise les framworks:<br>"
-        "<li> Django,"
-        "<li> PoSQL & MySQL,"
-        "<li> jQuery et Bootstrap.<br>"
+    'technique': [
+        "Voici ses compétances techniques :<br>"
+        "<li> Production: Python 3, Django/ Flask, Html, CSS, JavaScript"
+        "<li> Librairies: Bootstrap, jQuery"
+        "<li> BDD: PostgreSQL, MySQL "
+        "<li> Serveur: Digital Ocean, Nginx, Gunicorn, Heroku "
+        "<li> Intégration Continue: Travis CI, Jenkins "
+        "<li> Monitoring: Sentry, New Relic, Supervisor "
+        "<li> Méthodologie : Agile, Scrum, TDD "
+        "<li> Windows, Linux, Git, GitHub, Prezi Next"
+        "<li> Ou encore : Word, Excel, Powerpoint"
     ],
     'softskills': [
         "Pourquoi le choisir ? <br> Pour ses atouts :<br>"

@@ -7,7 +7,15 @@ WORD_ABOUT_PROFIL = [
 	'intérêts',
 	"centre d'intérêt",
 	"centres d'intérêts",
+	"hobby",
+	"loisir",
+	"passion",
 	"intéresse",
+	'défis',
+	'volontaire',
+	'adaptation',
+
+
 ]
 WORD_ABOUT_EXP = [
 	'profession',
@@ -21,6 +29,13 @@ WORD_ABOUT_EXP = [
 	'métier',
 	'métier exercé',
 	'parcours professionnel'
+	'relation',
+	'relation clientèle',
+	'expert',
+	'developpement',
+	'developpeur',
+
+
 ]
 WORD_ABOUT_FORMATION = [
 	'formation',
@@ -35,9 +50,12 @@ WORD_ABOUT_FORMATION = [
 	'collège',
 	'lycée',
 	'études',
-	'étudier'
+	'étudier',
+	'autodidacte',
+
 ]
 WORD_ABOUT_SKILLS = [
+	'stack',
 	'atout',
 	'atouts',
 	'skills',
@@ -57,7 +75,8 @@ WORD_ABOUT_SKILLS = [
 	'bootstrap',
 	'html5',
 	'css',
-	'photoshop'
+	'photoshop',
+	'devops',
 ]
 
 WORD_ABOUT_PROJECT = [

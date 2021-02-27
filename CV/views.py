@@ -61,36 +61,7 @@ def get_user_request():
                 dict_information = {'information': information,
                                     'resp': random.choice(list(formation.values()))}
                 return json.dumps(dict_information)
-            # for key, value in profil.items():
-            #     matching = [s for s in value if information in s]
-            #     if matching or information in WORD_ABOUT_PROFIL:
-            #         dict_information = {'information': information,
-            #                             'resp': random.choice(list(profil.values()))}
-            #         return json.dumps(dict_information)
-            # for key, value in experiences.items():
-            #     matching = [s for s in value if information in s]
-            #     if matching or information in WORD_ABOUT_EXP:
-            #         dict_information = {'information': information,
-            #                             'resp': random.choice(list(experiences.values()))}
-            #         return json.dumps(dict_information)
-            # for key, value in skills.items():
-            #     matching = [s for s in value if information in s]
-            #     if matching or information in WORD_ABOUT_SKILLS:
-            #         dict_information = {'information': information,
-            #                             'resp': random.choice(list(skills.values()))}
-            #         return json.dumps(dict_information)
-            # for key, value in projets.items():
-            #     matching = [s for s in value if information in s]
-            #     if matching or information in WORD_ABOUT_PROJECT:
-            #         dict_information = {'information': information,
-            #                             'resp': random.choice(list(projets.values()))}
-            #         return json.dumps(dict_information)
-            # for key, value in formation.items():
-            #     matching = [s for s in value if information in s]
-            #     if matching or information in WORD_ABOUT_FORMATION:
-            #         dict_information = {'information': information,
-            #                             'resp': random.choice(list(formation.values()))}
-            #         return json.dumps(dict_information)
+
 
 if __name__ == '__main__':
     app.run(debug=True)

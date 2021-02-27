@@ -6,7 +6,7 @@ import json
 import string
 
 from CV.vocabulary import WORD_PLEASE
-import enchant
+# import enchant
 
 
 class Parser:
@@ -38,17 +38,17 @@ class Parser:
         information = information.replace(" de ", '')
         return information
 
-    def remove_unexpected_word(self, information: str):
-        d = enchant.Dict("en_FR")
-        information = information.split()
-        info = []
-        for word in information:
-            d.check(word)
-            if d is True:
-                info.append(word)
-            else:
-                pass
-        return str(info)
+    # def remove_unexpected_word(self, information: str):
+    #     d = enchant.Dict("en_FR")
+    #     information = information.split()
+    #     info = []
+    #     for word in information:
+    #         d.check(word)
+    #         if d is True:
+    #             info.append(word)
+    #         else:
+    #             pass
+    #     return str(info)
 
     def remove_punctuation(self, information: str):
         """punctuation to space"""

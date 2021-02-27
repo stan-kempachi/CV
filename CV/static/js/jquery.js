@@ -29,19 +29,19 @@ $(function() {
             type: 'GET',
             success: function (response) {
                 $('#contain_loader').css("display", "none");
-                $("#fontchat").animate({scrollTop: $("#tchat").height()}, 1000);
+                $("#fontchat").animate({scrollTop: $("#tchat").height()}, 2000);
                 var response_json = JSON.parse(response);
                 var type = response_json['type_search'];
                 var prenom = response_json['name'];
                 if (type == 'name' ) {
                     $('#tchat').append('<div id="avatar2"></div><br><br>' + '<reponse>' + 'Enchanté ' +
                         prenom + "&nbsp;!&nbsp;" + (response_json['nice']) + '</reponse>');
-                    $("#fontchat").animate({scrollTop: $("#tchat").height()}, 1000);
+                    $("#fontchat").animate({scrollTop: $("#tchat").height()}, 2000);
                 }
                 else {
                     $('#tchat').append('<div id="avatar2"></div><br><br>' + '<reponse>' +
                         (response_json['resp']) + '</reponse>');
-                    $("#fontchat").animate({scrollTop: $("#tchat").height()}, 1000);
+                    $("#fontchat").animate({scrollTop: $("#tchat").height()}, 2000);
                 }
             },
             error: function (error) {

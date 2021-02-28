@@ -104,9 +104,9 @@ path.two {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+    width: 100%;
     background: rgba(0,0,0,0.1);
-    z-index: 99999;
+    z-index: 99998;
     opacity:0;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
@@ -118,11 +118,10 @@ path.two {
     pointer-events: auto;
 }
 .modalDialog > div {
+    position: fixed;
     width: 20%;
-    position: relative;
-    left: 40%;
-    bottom: -17%;
-    margin: 10% auto;
+    right: 0%;
+    bottom: 0%;
     padding: 5px 20px 13px 20px;
     background: -moz-linear-gradient(#42A8C0, #2d7788);
     background: -webkit-linear-gradient(#42A8C0, #2d7788);
@@ -132,24 +131,20 @@ path.two {
     border-radius:10px;
 }
 .close {
-    background: #606061;
-    color: #FFFFFF;
-    line-height: 25px;
+    background: #ae1422;
+    color: #fffff9;
     position: absolute;
     right: 0px;
     text-align: center;
-    top: 0px;
-    width: 24px;
+    top: -15px;
+    width: 30px;
     text-decoration: none;
-    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
     -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-    -moz-box-shadow: 1px 1px 3px #000;
-    -webkit-box-shadow: 1px 1px 3px #000;
-    box-shadow: 1px 1px 3px #000;
+    z-index: revert;
+    opacity: 100%;
 }
-.close:hover { background: #6ed1d8; }
+.close:hover { background: #cb1426; }
 
 #fontchat {
     font-family: 'Roboto', sans-serif;
@@ -171,6 +166,7 @@ path.two {
 #msg_id {
     font-size: inherit;
     color: black;
+    width: 72%;
 }
 
 #boutenvoyer {
@@ -204,18 +200,20 @@ path.two {
 }
 
 div#avatar {
-    background-image: url("../../avatar2.png");
-    width: 70px;
-    height: 69px;
     margin: 5px;
+    background-image: url("https://img.icons8.com/doodle/50/000000/retro-robot.png");
+    width: 50px;
+    height: 50px;
+    right: 0;
 
 }div#avatar2 {
     background-image: url("../../avatar.png");
     width: 40px;
     height: 40px;
+    border-radius: 20px;
     float: right;
-    margin: 10px;
-}
+    padding: 10px;
+ }
 
 .arrondie {
 -moz-border-radius:70px;
@@ -298,24 +296,24 @@ reponse {
     text-align:left;
     float:right;
     padding: 5px;
-    background-color: #f2d1ca;
-    border-radius: 5px;
-    box-shadow: 0px 0px 6px #B2B2B2;
+    background-color: #89f287;
+    border-radius: 5px 0 5px 5px;
+    box-shadow: 0px 0px 4px #B2B2B2;
     width:  auto;
 }
 div msg {
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 40px;
-    margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 40px;
 }
 msg {
     text-align:left;
     float:left;
     padding: 5px;
     background-color: rgba(245, 255, 183, 0.6);
-    border-radius: 5px;
-    box-shadow: 0px 0px 6px #B2B2B2;
+    border-radius: 0 5px 5px 5px;
+    box-shadow: 0px 0px 4px #B2B2B2;
 }
 
 .bubble{
@@ -343,4 +341,12 @@ msg {
 .choix{
     padding: 5px;
     background-color: #f2d1ca;
+}
+
+#stanbot{
+    top: 0;
+    right: 20%;
+    padding: 5%;
+    position: absolute;
+    color: white;
 }

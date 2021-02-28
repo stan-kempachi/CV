@@ -15,8 +15,8 @@ $(function() {
     });
     $('#boutenvoyer').click(function() {
         $('#alert').css("display", "none");
-        var msg = '<img src="https://img.icons8.com/officel/40/000000/user.png" style="margin:10px"/>' + '<br><msg>' +
-            $('#msg_id').val() + '</msg><br><br>';
+        var msg = '<img src="https://img.icons8.com/bubbles/60/000000/user-male.png"/>' + '<br><msg>' +
+            $('#msg_id').val() + '</msg>';
         var request = $('input');
         if ($('#input_form').val() == '') {
             return;
@@ -34,12 +34,12 @@ $(function() {
                 var type = response_json['type_search'];
                 var prenom = response_json['name'];
                 if (type == 'name' ) {
-                    $('#tchat').append('<div id="avatar2"></div><br><br>' + '<reponse>' + 'Enchanté ' +
+                    $('#tchat').append('<br><div id="avatar2"></div>' + '<reponse>' + 'Enchanté ' +
                         prenom + "&nbsp;!&nbsp;" + (response_json['nice']) + '</reponse>');
                     $("#fontchat").animate({scrollTop: $("#tchat").height()}, 2000);
                 }
                 else {
-                    $('#tchat').append('<div id="avatar2"></div><br><br>' + '<reponse>' +
+                    $('#tchat').append('<br><div id="avatar2"></div>' + '<reponse>' +
                         (response_json['resp']) + '</reponse>');
                     $("#fontchat").animate({scrollTop: $("#tchat").height()}, 2000);
                 }

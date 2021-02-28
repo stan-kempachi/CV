@@ -124,8 +124,8 @@ SOFTSKILLS = [
 ]
 
 TYPE_QUESTION_NAME = [
-	"Pour commencer quel est votre prénom ?"
+	'Pour commencer quel est votre prénom ?'
 ]
 TYPE_QUESTION = [
-	"Que voulez vous savoir ?<br> <i>Dites par exemple : Quelles sont ses compétences techniques ?<i>"
+	'Que voulez vous savoir ?<br> <i> Dites par exemple : " Quelles sont ses compétences techniques ? "<i>'
 ]

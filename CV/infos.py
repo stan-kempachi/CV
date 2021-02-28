@@ -3,6 +3,15 @@ profil = {
         "Stan aime relever les défis. Il est volontaire, possède de très bonnes "
         "facultés d'adaptation et un formidable sens du relationnel  ! <br>"
     ],
+    'softskills': [
+        "Pourquoi le choisir ? <br> Pour ses atouts :<br>"
+        "<li>L'écoute, l'analyse d'une demande client et la mise en place d'une solution "
+        "<li>La recherche permanente de la satisfaction du client"
+        "<li> C'est un développeur chevroné persévérant et maitrisant python"
+        "<li>Un bon sens du relationnel de l'humilité et de la patience."
+        "<li>L'envie d’apprendre pour monter facilement et plus rapidement en compétences."
+        "<li>L'empathie et le sens du service , s’impliquant dans la vie d'une équipe et d'un projet."
+    ]
           }
 
 experiences = {
@@ -51,7 +60,7 @@ projets = {
 
 skills = {
     'technique': [
-        "Voici ses compétances techniques :<br>"
+        "Voici une liste de ses compétences techniques :<br>"
         "<li> Production: Python 3, Django/ Flask, Html, CSS, JavaScript"
         "<li> Librairies: Bootstrap, jQuery"
         "<li> BDD: PostgreSQL, MySQL "
@@ -62,13 +71,4 @@ skills = {
         "<li> Windows, Linux, Git, GitHub, Prezi Next"
         "<li> Ou encore : Word, Excel, Powerpoint"
     ],
-    'softskills': [
-        "Pourquoi le choisir ? <br> Pour ses atouts :<br>"
-        "<li>L'écoute, l'analyse d'une demande client et la mise en place d'une solution "
-        "<li>La recherche permanente de la satisfaction du client"
-        "<li> C'est un développeur chevroné persévérant et maitrisant python"
-        "<li>Un bon sens du relationnel de l'humilité et de la patience."
-        "<li>L'envie d’apprendre pour monter facilement et plus rapidement en compétences." 
-        "<li>L'empathie et le sens du service , s’impliquant dans la vie d'une équipe et d'un projet."
-    ]
           }

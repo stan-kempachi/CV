@@ -319,7 +319,7 @@ msg {
     display: block;
     height: 20px;
     left: -10px;
-    position: relative;
+    /*position: relative;*/
     top: 20px;
     transform: rotate( 45deg );
     width:  20px;
@@ -334,6 +334,15 @@ msg {
     top: 0;
     right: 20%;
     padding: 5%;
-    position: absolute;
+    position: relative;
     color: white;
+    margin: 10%;
+}
+
+#stanbot_cel{
+
+}
+
+#box_chat{
+    width: min-content;
 }

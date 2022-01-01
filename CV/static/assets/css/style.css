@@ -430,3 +430,15 @@ button {
     border-style: outset;
     border-width: 3px;
 }
+
+#space_logo {
+    size: 50px;
+}
+
+div#avatar {
+    background-image: url('../images/logo_space.png');
+    background-repeat: no-repeat;
+    width:119px;
+    height:62px;
+    padding: 0;
+}
